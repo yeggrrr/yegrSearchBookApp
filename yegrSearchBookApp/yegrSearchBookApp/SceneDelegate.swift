@@ -23,12 +23,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.makeKeyAndVisible()
         
         let firstVC = SearchViewController()
-        // firstVC.view.backgroundColor = .systemGray
         firstVC.title = "Search"
         firstVC.tabBarItem = UITabBarItem(title: "Search", image: UIImage(systemName: "magnifyingglass"), selectedImage: UIImage(systemName: "sparkle.magnifyingglass"))
         
         let secondVC = ListViewController()
-        // secondVC.view.backgroundColor = .darkGray
         secondVC.title = "List"
         secondVC.tabBarItem = UITabBarItem(title: "List", image: UIImage(systemName: "list.bullet"), selectedImage: UIImage(systemName: "list.star"))
                 
@@ -36,6 +34,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let nav2 = UINavigationController(rootViewController: secondVC)
         
         tabBarVC.setViewControllers([nav1, nav2], animated: true)
+        tabBarVC.tabBar.tintColor = .systemPink
+        tabBarVC.tabBar.backgroundColor = .systemGray
+        tabBarVC.tabBar.unselectedItemTintColor = .darkGray
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

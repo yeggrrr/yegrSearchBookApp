@@ -17,6 +17,8 @@
 		683F41392BEA1333007CC562 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683F41382BEA1333007CC562 /* SearchTableViewCell.swift */; };
 		683F413B2BEA3892007CC562 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683F413A2BEA3892007CC562 /* SearchViewController.swift */; };
 		683F413D2BEA38AC007CC562 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683F413C2BEA38AC007CC562 /* ListViewController.swift */; };
+		683F41402BEA417D007CC562 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 683F413F2BEA417D007CC562 /* Kingfisher */; };
+		683F41432BEA418C007CC562 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 683F41422BEA418C007CC562 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				683F41402BEA417D007CC562 /* Kingfisher in Frameworks */,
+				683F41432BEA418C007CC562 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +99,10 @@
 			dependencies = (
 			);
 			name = yegrSearchBookApp;
+			packageProductDependencies = (
+				683F413F2BEA417D007CC562 /* Kingfisher */,
+				683F41422BEA418C007CC562 /* SnapKit */,
+			);
 			productName = yegrSearchBookApp;
 			productReference = 680E0BAC2BEA0389007D41FD /* yegrSearchBookApp.app */;
 			productType = "com.apple.product-type.application";
@@ -123,6 +131,10 @@
 				Base,
 			);
 			mainGroup = 680E0BA32BEA0389007D41FD;
+			packageReferences = (
+				683F413E2BEA417D007CC562 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				683F41412BEA418C007CC562 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 680E0BAD2BEA0389007D41FD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -377,6 +389,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		683F413E2BEA417D007CC562 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.11.0;
+			};
+		};
+		683F41412BEA418C007CC562 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		683F413F2BEA417D007CC562 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 683F413E2BEA417D007CC562 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		683F41422BEA418C007CC562 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 683F41412BEA418C007CC562 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		680E0BB82BEA0389007D41FD /* yegrSearchBookApp.xcdatamodeld */ = {
