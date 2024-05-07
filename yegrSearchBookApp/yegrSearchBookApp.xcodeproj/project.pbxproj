@@ -1,0 +1,395 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		680E0BB02BEA0389007D41FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680E0BAF2BEA0389007D41FD /* AppDelegate.swift */; };
+		680E0BB22BEA0389007D41FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680E0BB12BEA0389007D41FD /* SceneDelegate.swift */; };
+		680E0BB42BEA0389007D41FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680E0BB32BEA0389007D41FD /* ViewController.swift */; };
+		680E0BB72BEA0389007D41FD /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 680E0BB62BEA0389007D41FD /* Base */; };
+		680E0BBA2BEA0389007D41FD /* yegrSearchBookApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 680E0BB82BEA0389007D41FD /* yegrSearchBookApp.xcdatamodeld */; };
+		680E0BBC2BEA038A007D41FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 680E0BBB2BEA038A007D41FD /* Assets.xcassets */; };
+		680E0BBF2BEA038A007D41FD /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 680E0BBE2BEA038A007D41FD /* Base */; };
+		683F41392BEA1333007CC562 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683F41382BEA1333007CC562 /* SearchTableViewCell.swift */; };
+		683F413B2BEA3892007CC562 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683F413A2BEA3892007CC562 /* SearchViewController.swift */; };
+		683F413D2BEA38AC007CC562 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683F413C2BEA38AC007CC562 /* ListViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		680E0BAC2BEA0389007D41FD /* yegrSearchBookApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yegrSearchBookApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		680E0BAF2BEA0389007D41FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		680E0BB12BEA0389007D41FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		680E0BB32BEA0389007D41FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		680E0BB62BEA0389007D41FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		680E0BB92BEA0389007D41FD /* yegrSearchBookApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = yegrSearchBookApp.xcdatamodel; sourceTree = "<group>"; };
+		680E0BBB2BEA038A007D41FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		680E0BBE2BEA038A007D41FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		680E0BC02BEA038A007D41FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		683F41382BEA1333007CC562 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		683F413A2BEA3892007CC562 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		683F413C2BEA38AC007CC562 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		680E0BA92BEA0389007D41FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		680E0BA32BEA0389007D41FD = {
+			isa = PBXGroup;
+			children = (
+				680E0BAE2BEA0389007D41FD /* yegrSearchBookApp */,
+				680E0BAD2BEA0389007D41FD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		680E0BAD2BEA0389007D41FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				680E0BAC2BEA0389007D41FD /* yegrSearchBookApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		680E0BAE2BEA0389007D41FD /* yegrSearchBookApp */ = {
+			isa = PBXGroup;
+			children = (
+				680E0BAF2BEA0389007D41FD /* AppDelegate.swift */,
+				680E0BB12BEA0389007D41FD /* SceneDelegate.swift */,
+				680E0BB32BEA0389007D41FD /* ViewController.swift */,
+				683F413A2BEA3892007CC562 /* SearchViewController.swift */,
+				683F413C2BEA38AC007CC562 /* ListViewController.swift */,
+				683F41382BEA1333007CC562 /* SearchTableViewCell.swift */,
+				680E0BB52BEA0389007D41FD /* Main.storyboard */,
+				680E0BBB2BEA038A007D41FD /* Assets.xcassets */,
+				680E0BBD2BEA038A007D41FD /* LaunchScreen.storyboard */,
+				680E0BC02BEA038A007D41FD /* Info.plist */,
+				680E0BB82BEA0389007D41FD /* yegrSearchBookApp.xcdatamodeld */,
+			);
+			path = yegrSearchBookApp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		680E0BAB2BEA0389007D41FD /* yegrSearchBookApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 680E0BC32BEA038A007D41FD /* Build configuration list for PBXNativeTarget "yegrSearchBookApp" */;
+			buildPhases = (
+				680E0BA82BEA0389007D41FD /* Sources */,
+				680E0BA92BEA0389007D41FD /* Frameworks */,
+				680E0BAA2BEA0389007D41FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = yegrSearchBookApp;
+			productName = yegrSearchBookApp;
+			productReference = 680E0BAC2BEA0389007D41FD /* yegrSearchBookApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		680E0BA42BEA0389007D41FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					680E0BAB2BEA0389007D41FD = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 680E0BA72BEA0389007D41FD /* Build configuration list for PBXProject "yegrSearchBookApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 680E0BA32BEA0389007D41FD;
+			productRefGroup = 680E0BAD2BEA0389007D41FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				680E0BAB2BEA0389007D41FD /* yegrSearchBookApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		680E0BAA2BEA0389007D41FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				680E0BBC2BEA038A007D41FD /* Assets.xcassets in Resources */,
+				680E0BBF2BEA038A007D41FD /* Base in Resources */,
+				680E0BB72BEA0389007D41FD /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		680E0BA82BEA0389007D41FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				683F413B2BEA3892007CC562 /* SearchViewController.swift in Sources */,
+				680E0BB42BEA0389007D41FD /* ViewController.swift in Sources */,
+				680E0BB02BEA0389007D41FD /* AppDelegate.swift in Sources */,
+				680E0BB22BEA0389007D41FD /* SceneDelegate.swift in Sources */,
+				680E0BBA2BEA0389007D41FD /* yegrSearchBookApp.xcdatamodeld in Sources */,
+				683F41392BEA1333007CC562 /* SearchTableViewCell.swift in Sources */,
+				683F413D2BEA38AC007CC562 /* ListViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		680E0BB52BEA0389007D41FD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				680E0BB62BEA0389007D41FD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		680E0BBD2BEA038A007D41FD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				680E0BBE2BEA038A007D41FD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		680E0BC12BEA038A007D41FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		680E0BC22BEA038A007D41FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		680E0BC42BEA038A007D41FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = yegrSearchBookApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = YJ.yegrSearchBookApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		680E0BC52BEA038A007D41FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = yegrSearchBookApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = YJ.yegrSearchBookApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		680E0BA72BEA0389007D41FD /* Build configuration list for PBXProject "yegrSearchBookApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				680E0BC12BEA038A007D41FD /* Debug */,
+				680E0BC22BEA038A007D41FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		680E0BC32BEA038A007D41FD /* Build configuration list for PBXNativeTarget "yegrSearchBookApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				680E0BC42BEA038A007D41FD /* Debug */,
+				680E0BC52BEA038A007D41FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		680E0BB82BEA0389007D41FD /* yegrSearchBookApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				680E0BB92BEA0389007D41FD /* yegrSearchBookApp.xcdatamodel */,
+			);
+			currentVersion = 680E0BB92BEA0389007D41FD /* yegrSearchBookApp.xcdatamodel */;
+			path = yegrSearchBookApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 680E0BA42BEA0389007D41FD /* Project object */;
+}
