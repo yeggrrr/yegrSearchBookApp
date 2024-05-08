@@ -12,7 +12,6 @@ class SearchViewController: UIViewController {
     
     let searchBar = UISearchBar()
     let bookListTableView = UITableView()
-    let titleLabel = UILabel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,9 +57,6 @@ extension SearchViewController: UISearchBarDelegate {
         // 플레이스홀더 컬러
         let textFieldInsideSearchBar = searchBar.value(forKey: "searchField") as? UITextField
         textFieldInsideSearchBar?.attributedPlaceholder = NSAttributedString(string: "책 이름을 입력해주세요.", attributes: [NSAttributedString.Key.foregroundColor: UIColor.darkGray])
-        
-        // 네비게이션 바에 넣기
-        // navigationItem.titleView = searchBar
     }
 }
 
@@ -72,13 +68,15 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: SearchTableViewCell.identifier, for: indexPath) as? SearchTableViewCell else { return UITableViewCell() }
-        cell.titleLabel.text = "책 이름"
-        cell.titleLabel.textColor = .black
         
         return cell
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+    // func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    //     return 100
+    // }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.present(DetailViewController(), animated: true)
     }
 }

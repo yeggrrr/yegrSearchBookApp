@@ -19,6 +19,9 @@
 		683F413D2BEA38AC007CC562 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683F413C2BEA38AC007CC562 /* ListViewController.swift */; };
 		683F41402BEA417D007CC562 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 683F413F2BEA417D007CC562 /* Kingfisher */; };
 		683F41432BEA418C007CC562 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 683F41422BEA418C007CC562 /* SnapKit */; };
+		683F41492BEAA982007CC562 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683F41482BEAA982007CC562 /* DetailViewController.swift */; };
+		683F414B2BEB4C91007CC562 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683F414A2BEB4C91007CC562 /* ListTableViewCell.swift */; };
+		683F414D2BEB5473007CC562 /* AddBookListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683F414C2BEB5473007CC562 /* AddBookListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		683F41382BEA1333007CC562 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		683F413A2BEA3892007CC562 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		683F413C2BEA38AC007CC562 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		683F41482BEAA982007CC562 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		683F414A2BEB4C91007CC562 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		683F414C2BEB5473007CC562 /* AddBookListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,17 +76,52 @@
 			children = (
 				680E0BAF2BEA0389007D41FD /* AppDelegate.swift */,
 				680E0BB12BEA0389007D41FD /* SceneDelegate.swift */,
-				680E0BB32BEA0389007D41FD /* ViewController.swift */,
-				683F413A2BEA3892007CC562 /* SearchViewController.swift */,
-				683F413C2BEA38AC007CC562 /* ListViewController.swift */,
-				683F41382BEA1333007CC562 /* SearchTableViewCell.swift */,
-				680E0BB52BEA0389007D41FD /* Main.storyboard */,
-				680E0BBB2BEA038A007D41FD /* Assets.xcassets */,
-				680E0BBD2BEA038A007D41FD /* LaunchScreen.storyboard */,
+				683F41462BEA9513007CC562 /* Resources */,
+				683F41472BEA9532007CC562 /* Sources */,
 				680E0BC02BEA038A007D41FD /* Info.plist */,
 				680E0BB82BEA0389007D41FD /* yegrSearchBookApp.xcdatamodeld */,
 			);
 			path = yegrSearchBookApp;
+			sourceTree = "<group>";
+		};
+		683F41442BEA94C6007CC562 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				683F413A2BEA3892007CC562 /* SearchViewController.swift */,
+				680E0BB32BEA0389007D41FD /* ViewController.swift */,
+				683F413C2BEA38AC007CC562 /* ListViewController.swift */,
+				683F41482BEAA982007CC562 /* DetailViewController.swift */,
+				683F414C2BEB5473007CC562 /* AddBookListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		683F41452BEA94D8007CC562 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				683F41382BEA1333007CC562 /* SearchTableViewCell.swift */,
+				683F414A2BEB4C91007CC562 /* ListTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		683F41462BEA9513007CC562 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				680E0BB52BEA0389007D41FD /* Main.storyboard */,
+				680E0BBD2BEA038A007D41FD /* LaunchScreen.storyboard */,
+				680E0BBB2BEA038A007D41FD /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		683F41472BEA9532007CC562 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				683F41442BEA94C6007CC562 /* Controller */,
+				683F41452BEA94D8007CC562 /* Cell */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,12 +204,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				683F413B2BEA3892007CC562 /* SearchViewController.swift in Sources */,
+				683F414D2BEB5473007CC562 /* AddBookListViewController.swift in Sources */,
 				680E0BB42BEA0389007D41FD /* ViewController.swift in Sources */,
 				680E0BB02BEA0389007D41FD /* AppDelegate.swift in Sources */,
 				680E0BB22BEA0389007D41FD /* SceneDelegate.swift in Sources */,
 				680E0BBA2BEA0389007D41FD /* yegrSearchBookApp.xcdatamodeld in Sources */,
+				683F414B2BEB4C91007CC562 /* ListTableViewCell.swift in Sources */,
 				683F41392BEA1333007CC562 /* SearchTableViewCell.swift in Sources */,
 				683F413D2BEA38AC007CC562 /* ListViewController.swift in Sources */,
+				683F41492BEAA982007CC562 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
