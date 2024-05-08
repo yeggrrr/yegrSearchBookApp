@@ -21,7 +21,8 @@
 		683F41432BEA418C007CC562 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 683F41422BEA418C007CC562 /* SnapKit */; };
 		683F41492BEAA982007CC562 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683F41482BEAA982007CC562 /* DetailViewController.swift */; };
 		683F414B2BEB4C91007CC562 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683F414A2BEB4C91007CC562 /* ListTableViewCell.swift */; };
-		683F414D2BEB5473007CC562 /* AddBookListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683F414C2BEB5473007CC562 /* AddBookListViewController.swift */; };
+		683F414D2BEB5473007CC562 /* AddBookListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683F414C2BEB5473007CC562 /* AddBookListDetailViewController.swift */; };
+		683F41502BEBEC9F007CC562 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 683F414F2BEBEC9F007CC562 /* Then */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +40,7 @@
 		683F413C2BEA38AC007CC562 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		683F41482BEAA982007CC562 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		683F414A2BEB4C91007CC562 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
-		683F414C2BEB5473007CC562 /* AddBookListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookListViewController.swift; sourceTree = "<group>"; };
+		683F414C2BEB5473007CC562 /* AddBookListDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookListDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +49,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				683F41402BEA417D007CC562 /* Kingfisher in Frameworks */,
+				683F41502BEBEC9F007CC562 /* Then in Frameworks */,
 				683F41432BEA418C007CC562 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -91,7 +93,7 @@
 				680E0BB32BEA0389007D41FD /* ViewController.swift */,
 				683F413C2BEA38AC007CC562 /* ListViewController.swift */,
 				683F41482BEAA982007CC562 /* DetailViewController.swift */,
-				683F414C2BEB5473007CC562 /* AddBookListViewController.swift */,
+				683F414C2BEB5473007CC562 /* AddBookListDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -143,6 +145,7 @@
 			packageProductDependencies = (
 				683F413F2BEA417D007CC562 /* Kingfisher */,
 				683F41422BEA418C007CC562 /* SnapKit */,
+				683F414F2BEBEC9F007CC562 /* Then */,
 			);
 			productName = yegrSearchBookApp;
 			productReference = 680E0BAC2BEA0389007D41FD /* yegrSearchBookApp.app */;
@@ -175,6 +178,7 @@
 			packageReferences = (
 				683F413E2BEA417D007CC562 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				683F41412BEA418C007CC562 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				683F414E2BEBEC9F007CC562 /* XCRemoteSwiftPackageReference "Then" */,
 			);
 			productRefGroup = 680E0BAD2BEA0389007D41FD /* Products */;
 			projectDirPath = "";
@@ -204,7 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				683F413B2BEA3892007CC562 /* SearchViewController.swift in Sources */,
-				683F414D2BEB5473007CC562 /* AddBookListViewController.swift in Sources */,
+				683F414D2BEB5473007CC562 /* AddBookListDetailViewController.swift in Sources */,
 				680E0BB42BEA0389007D41FD /* ViewController.swift in Sources */,
 				680E0BB02BEA0389007D41FD /* AppDelegate.swift in Sources */,
 				680E0BB22BEA0389007D41FD /* SceneDelegate.swift in Sources */,
@@ -451,6 +455,14 @@
 				minimumVersion = 5.7.1;
 			};
 		};
+		683F414E2BEBEC9F007CC562 /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -463,6 +475,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 683F41412BEA418C007CC562 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		683F414F2BEBEC9F007CC562 /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 683F414E2BEBEC9F007CC562 /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
 		};
 /* End XCSwiftPackageProductDependency section */
 

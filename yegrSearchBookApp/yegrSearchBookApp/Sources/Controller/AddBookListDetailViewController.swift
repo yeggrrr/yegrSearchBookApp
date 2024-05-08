@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class AddBookListViewController: UIViewController {
+class AddBookListDetailViewController: UIViewController {
     // Top informations
     let bookNameLabel = UILabel()
     let authorNameLabel = UILabel()
@@ -31,6 +31,9 @@ class AddBookListViewController: UIViewController {
     let buttonStackView = UIStackView()
     let backButton = UIButton()
     let addButton = UIButton()
+    let collecionView = UICollectionView()
+    
+    var recentlyReadBookList: [String] = [] // 최근 열락한 책
     
     override func viewDidLoad() {
            super.viewDidLoad()

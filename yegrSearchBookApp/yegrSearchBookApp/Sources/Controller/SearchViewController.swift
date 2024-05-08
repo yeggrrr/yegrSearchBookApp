@@ -15,24 +15,23 @@ class SearchViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemGray
-        setupSearchBar()
         
         bookListTableView.register(SearchTableViewCell.self, forCellReuseIdentifier: SearchTableViewCell.identifier)
         bookListTableView.delegate = self
         bookListTableView.dataSource = self
         setupConstraints()
+        setupSearchBar()
     }
     
     func setupConstraints() {
         view.addSubview(searchBar)
         view.addSubview(bookListTableView)
-        view.backgroundColor = .systemGray
+        view.backgroundColor = .systemBrown
         
         let safeArea = view.safeAreaLayoutGuide
         searchBar.snp.makeConstraints {
             $0.leading.trailing.top.equalTo(safeArea)
-            $0.bottom.equalTo(bookListTableView.snp.top).offset(-10)
+            $0.bottom.equalTo(bookListTableView.snp.top)
         }
         
         bookListTableView.snp.makeConstraints {
@@ -51,12 +50,12 @@ extension SearchViewController: UISearchBarDelegate {
         // 텍스트필드 색상 변경
         if let textField = searchBar.value(forKey: "searchField") as? UITextField {
             textField.textColor = .black
-            textField.backgroundColor = .lightGray
+            textField.backgroundColor = .clear
         }
         
         // 플레이스홀더 컬러
         let textFieldInsideSearchBar = searchBar.value(forKey: "searchField") as? UITextField
-        textFieldInsideSearchBar?.attributedPlaceholder = NSAttributedString(string: "책 이름을 입력해주세요.", attributes: [NSAttributedString.Key.foregroundColor: UIColor.darkGray])
+        textFieldInsideSearchBar?.attributedPlaceholder = NSAttributedString(string: "찾으시는 책 이름을 입력해주세요.", attributes: [NSAttributedString.Key.foregroundColor: UIColor.darkGray])
     }
 }
 
@@ -71,10 +70,6 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
         
         return cell
     }
-    
-    // func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-    //     return 100
-    // }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.present(DetailViewController(), animated: true)

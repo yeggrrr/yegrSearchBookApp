@@ -35,7 +35,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         tabBarVC.setViewControllers([nav1, nav2], animated: true)
         tabBarVC.tabBar.tintColor = .systemPink
-        tabBarVC.tabBar.backgroundColor = .systemGray
+        tabBarVC.tabBar.backgroundColor = .systemBrown
         tabBarVC.tabBar.unselectedItemTintColor = .darkGray
     }
 

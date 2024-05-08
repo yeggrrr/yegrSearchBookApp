@@ -7,6 +7,7 @@
 
 import UIKit
 import SnapKit
+import Then
 
 class DetailViewController: UIViewController {
     
@@ -36,9 +37,10 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
            super.viewDidLoad()
         view.backgroundColor = .white
+
         setupConstraints()
         configure()
-        
+
         backButton.addTarget(self, action: #selector(backButtonClicked), for: .touchUpInside)
        }
     
@@ -72,7 +74,7 @@ class DetailViewController: UIViewController {
         
         // backButton
         let symbolConfiguration = UIImage.SymbolConfiguration(pointSize: 50, weight: .regular, scale: .large)
-        let xImage = UIImage(systemName: "xmark.app", withConfiguration: symbolConfiguration)
+        let xImage = UIImage(systemName: "clear.fill", withConfiguration: symbolConfiguration)
         
         backButton.setImage(xImage, for: .normal)
         backButton.tintColor = .systemBrown
@@ -150,16 +152,51 @@ class DetailViewController: UIViewController {
         }
         
         buttonStackView.snp.makeConstraints {
-            $0.leading.equalTo(safeArea.snp.leading).inset(10)
-            $0.trailing.equalTo(safeArea.snp.trailing).inset(10)
+            $0.leading.equalTo(safeArea.snp.leading).inset(20)
+            $0.trailing.equalTo(safeArea.snp.trailing).inset(20)
             $0.top.equalTo(descriptionScrollView.snp.bottom).offset(10)
-            $0.bottom.equalTo(safeArea.snp.bottom).inset(10)
+            $0.bottom.equalTo(safeArea.snp.bottom).inset(20)
             $0.height.equalTo(50)
         }
         
         backButton.snp.makeConstraints {
             $0.height.equalTo(backButton.snp.width)
         }
+        
+        // let backButton = UIButton().then {
+        //     var configuration = UIButton.Configuration.tinted()
+        //     configuration.image = UIImage(systemName: "xmark")
+        //     configuration.baseForegroundColor = .white
+        //     configuration.background.backgroundColor = .gray
+        //     configuration.cornerStyle = .large
+        //     
+        //     $0.configuration = configuration
+        // }
+        // 
+        // let addButton = UIButton().then {
+        //     var configuration = UIButton.Configuration.tinted()
+        //     configuration.image = UIImage(systemName: "bookmark")
+        //     configuration.title = "담기"
+        //     configuration.imagePlacement = .trailing
+        //     configuration.imagePadding = 10
+        //     configuration.baseForegroundColor = .white
+        //     configuration.background.backgroundColor = .gray
+        //     configuration.cornerStyle = .large
+        //     
+        //     $0.configuration = configuration
+        // }
+        // 
+        // backButton.snp.makeConstraints{
+        //     $0.bottom.equalTo(view.safeAreaLayoutGuide).offset(-20)
+        //     $0.leading.equalToSuperview().offset(20)
+        //     $0.width.height.equalTo(50)
+        // }
+        // 
+        // addButton.snp.makeConstraints{
+        //     $0.bottom.equalTo(view.safeAreaLayoutGuide).offset(-20)
+        //     $0.trailing.equalToSuperview().offset(-20)
+        //     $0.leading.equalTo(backButton.snp.trailing).offset(10)
+        //     $0.height.equalTo(50)
+        // }
     }
-
 }

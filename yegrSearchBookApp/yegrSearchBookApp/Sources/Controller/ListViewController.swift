@@ -11,38 +11,63 @@ class ListViewController: UIViewController {
     
     let removeAllButton = UIButton()
     let addListTableView = UITableView()
-    let label = UILabel()
+    let menuLabel = UILabel()
+    let barButton = UIBarButtonItem()
     
     override func viewDidLoad() {
-           super.viewDidLoad()
-        view.backgroundColor = .black
+        super.viewDidLoad()
+        
         addListTableView.register(ListTableViewCell.self, forCellReuseIdentifier: ListTableViewCell.identifier)
         addListTableView.delegate = self
         addListTableView.dataSource = self
         setupConstraints()
-       }
+        setupMenu()
+        
+    }
+    
+    var items: [UIAction] {
+        
+        let save = UIAction(
+            title: "추가",
+            image: UIImage(systemName: "plus"),
+            handler: { [unowned self] _ in
+                self.menuLabel.text = "추가"
+            })
+        
+        let delete = UIAction(
+            title: "전체 삭제",
+            image: UIImage(systemName: "trash"),
+            handler: { [unowned self] _ in
+                self.menuLabel.text = "전체 삭제"
+            })
+        
+        let Items = [save, delete]
+        
+        return Items
+    }
+
+    func setupMenu() {
+        let menu = UIMenu(title: "메뉴",
+                          children: items)
+        
+        // UIBarButtonItem의 생성자를 통해 메뉴를 생성하기
+        let barButton = UIBarButtonItem(title: nil,
+                                        image: UIImage(systemName: "ellipsis.circle"),
+                                        primaryAction: nil,
+                                        menu: menu)
+        
+        navigationItem.rightBarButtonItem = barButton
+        barButton.tintColor = .black
+    }
     
     func setupConstraints() {
         let safeArea = view.safeAreaLayoutGuide
         
-        view.addSubview(removeAllButton)
-        removeAllButton.setTitle("전체 삭제", for: .normal)
-        removeAllButton.titleLabel?.textColor = .white
-        removeAllButton.backgroundColor = .systemGray
-        removeAllButton.layer.cornerRadius = 10
-        removeAllButton.snp.makeConstraints {
-            $0.leading.equalTo(safeArea).offset(20)
-            $0.top.equalTo(safeArea).offset(10)
-        }
-        
         view.addSubview(addListTableView)
-        view.backgroundColor = .white
-        
-        
+        view.backgroundColor = .systemBrown
         
         addListTableView.snp.makeConstraints {
-            $0.top.equalTo(removeAllButton.snp.bottom).offset(20)
-            $0.leading.trailing.bottom.equalTo(safeArea)
+            $0.leading.trailing.bottom.top.equalTo(safeArea)
         }
     }
 }
@@ -64,6 +89,6 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.present(AddBookListViewController(), animated: true)
+        self.present(AddBookListDetailViewController(), animated: true)
     }
 }
