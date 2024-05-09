@@ -58,7 +58,7 @@ class DetailViewController: UIViewController {
         // authorNameLabel
         authorNameLabel.text = "에버랜드 동물원"
         authorNameLabel.font = .boldSystemFont(ofSize: 20)
-        authorNameLabel.textColor = .darkGray
+        authorNameLabel.textColor = .lightGray
         
         // priceLabel
         priceLabel.text = "₩ 18000"

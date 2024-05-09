@@ -12,6 +12,7 @@ class SearchViewController: UIViewController {
     
     let searchBar = UISearchBar()
     let bookListTableView = UITableView()
+    var bookList: [Document] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +22,7 @@ class SearchViewController: UIViewController {
         bookListTableView.dataSource = self
         setupConstraints()
         setupSearchBar()
+        showSearchedBookData(query: "판다")
     }
     
     func setupConstraints() {
@@ -38,10 +40,15 @@ class SearchViewController: UIViewController {
             $0.leading.trailing.bottom.equalTo(safeArea)
         }
     }
+    
+    func showSearchedBookData(query: String) {
+        NetworkManager.shared.searchBookAPI(query: query) { bookResult in
+            print(bookResult.documents) 
+        }
+    }
 }
 
 extension SearchViewController: UISearchBarDelegate {
-    
     func setupSearchBar() {
         searchBar.searchBarStyle = UISearchBar.Style.default
         searchBar.placeholder = "검색"

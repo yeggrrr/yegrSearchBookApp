@@ -23,6 +23,8 @@
 		683F414B2BEB4C91007CC562 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683F414A2BEB4C91007CC562 /* ListTableViewCell.swift */; };
 		683F414D2BEB5473007CC562 /* AddBookListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683F414C2BEB5473007CC562 /* AddBookListDetailViewController.swift */; };
 		683F41502BEBEC9F007CC562 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 683F414F2BEBEC9F007CC562 /* Then */; };
+		683F41562BEC4D87007CC562 /* NetworkManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683F41552BEC4D87007CC562 /* NetworkManger.swift */; };
+		683F41582BEC58CD007CC562 /* SearchBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683F41572BEC58CD007CC562 /* SearchBook.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		683F41482BEAA982007CC562 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		683F414A2BEB4C91007CC562 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		683F414C2BEB5473007CC562 /* AddBookListDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookListDetailViewController.swift; sourceTree = "<group>"; };
+		683F41552BEC4D87007CC562 /* NetworkManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManger.swift; sourceTree = "<group>"; };
+		683F41572BEC58CD007CC562 /* SearchBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBook.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,10 +124,28 @@
 		683F41472BEA9532007CC562 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				683F41512BEC4C75007CC562 /* Network */,
 				683F41442BEA94C6007CC562 /* Controller */,
 				683F41452BEA94D8007CC562 /* Cell */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		683F41512BEC4C75007CC562 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				683F41552BEC4D87007CC562 /* NetworkManger.swift */,
+				683F41522BEC4C8F007CC562 /* Model */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		683F41522BEC4C8F007CC562 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				683F41572BEC58CD007CC562 /* SearchBook.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +229,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				683F41582BEC58CD007CC562 /* SearchBook.swift in Sources */,
+				683F41562BEC4D87007CC562 /* NetworkManger.swift in Sources */,
 				683F413B2BEA3892007CC562 /* SearchViewController.swift in Sources */,
 				683F414D2BEB5473007CC562 /* AddBookListDetailViewController.swift in Sources */,
 				680E0BB42BEA0389007D41FD /* ViewController.swift in Sources */,

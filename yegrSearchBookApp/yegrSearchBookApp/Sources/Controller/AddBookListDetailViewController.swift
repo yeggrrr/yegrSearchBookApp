@@ -31,9 +31,6 @@ class AddBookListDetailViewController: UIViewController {
     let buttonStackView = UIStackView()
     let backButton = UIButton()
     let addButton = UIButton()
-    let collecionView = UICollectionView()
-    
-    var recentlyReadBookList: [String] = [] // 최근 열락한 책
     
     override func viewDidLoad() {
            super.viewDidLoad()
@@ -58,7 +55,7 @@ class AddBookListDetailViewController: UIViewController {
         // authorNameLabel
         authorNameLabel.text = "에버랜드 동물원"
         authorNameLabel.font = .boldSystemFont(ofSize: 20)
-        authorNameLabel.textColor = .darkGray
+        authorNameLabel.textColor = .lightGray
         
         // priceLabel
         priceLabel.text = "₩ 18000"
